@@ -244,4 +244,4 @@ contract Voting is Ownable {
 }
 
 
-// Pour moi on pourrait passer directement de VotingSessionStarted à VotesTallied (VotingSessionEnded n'ayant perdant tout son intérêt)
+// Pour moi on pourrait passer directement de VotingSessionStarted à VotesTallied (VotingSessionEnded perdant tout son intérêt)
