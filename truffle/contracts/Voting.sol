@@ -111,7 +111,7 @@ contract Voting is Ownable {
 
     // ::::::::::::: VOTE ::::::::::::: //
 
-    /*
+    /* ORIGINAL setVote FUNCTION
     function setVote( uint _id) external onlyVoters {
         require(workflowStatus == WorkflowStatus.VotingSessionStarted, 'Voting session havent started yet');
         require(voters[msg.sender].hasVoted != true, 'You have already voted');
@@ -210,7 +210,7 @@ contract Voting is Ownable {
     }
 
 
-    /*
+    /* ORIGINAL tallyVotes FUNCTION
     function tallyVotes() external onlyOwner {
         require(workflowStatus == WorkflowStatus.VotingSessionEnded, "Current status is not voting session ended");
         uint _winningProposalId;
